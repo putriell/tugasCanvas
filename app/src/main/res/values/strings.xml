@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Canvas</string>
-    <string name="keep_tapping"> Keep tapping</string>
+    <string name="keep_tapping"> Keep tapping to see a cat</string>
     <string name="done"> Done! </string>
 </resources>

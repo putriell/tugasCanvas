@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorRetangle"> #455A64</color>
-    <color name="colorBackground"> #ffffd600</color>
-    <color name="colorAccent">#FF6200ee</color>
+    <color name="colorBackground">#455A64 </color>
+    <color name="colorAccent">#ffffd600</color>
 </resources>
