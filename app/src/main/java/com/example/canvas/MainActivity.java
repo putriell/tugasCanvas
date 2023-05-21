@@ -114,31 +114,31 @@ public class MainActivity extends AppCompatActivity {
             mCanvas.drawPath(path, mPaint);
 
             mPaint.setColor(mColorWhite);
-            Point g = new Point(halfWidth-250, halfHeight-300);
-            Point h = new Point(halfWidth-110, halfHeight-410);
-            Point i = new Point( halfWidth-210, halfHeight-500);
+            Point d = new Point(halfWidth-250, halfHeight-300);
+            Point e = new Point(halfWidth-110, halfHeight-410);
+            Point f = new Point( halfWidth-210, halfHeight-500);
 
             Path path1 = new Path();
             path1.setFillType(Path.FillType.EVEN_ODD);
-            path1.lineTo(g.x, g.y);
-            path1.lineTo(h.x, h.y);
-            path1.lineTo(i.x, i.y);
-            path1.lineTo(g.x, g.y);
+            path1.lineTo(d.x, d.y);
+            path1.lineTo(e.x, e.y);
+            path1.lineTo(f.x, f.y);
+            path1.lineTo(d.x, d.y);
             path1.close();
 
             mCanvas.drawPath(path1, mPaint);
 
             //right ear
             mPaint.setColor(mColorFace);
-            Point d = new Point(halfWidth + 290, halfHeight - 250);
-            Point e = new Point(halfWidth + 90, halfHeight - 410);
-            Point f = new Point(halfWidth +230, halfHeight-550);
+            Point g = new Point(halfWidth + 290, halfHeight - 250);
+            Point h = new Point(halfWidth + 90, halfHeight - 410);
+            Point i = new Point(halfWidth +230, halfHeight-550);
 
             Path path2 = new Path();
-            path2.lineTo(d.x, d.y);
-            path2.lineTo(e.x, e.y);
-            path2.lineTo(f.x, f.y);
-            path2.lineTo(d.x, d.y);
+            path2.lineTo(g.x, g.y);
+            path2.lineTo(h.x, h.y);
+            path2.lineTo(i.x, i.y);
+            path2.lineTo(g.x, g.y);
             path2.close();
 
             mCanvas.drawPath(path2, mPaint);
