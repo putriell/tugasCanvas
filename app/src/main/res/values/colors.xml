@@ -9,5 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorRetangle"> #455A64</color>
     <color name="colorBackground">#455A64 </color>
-    <color name="colorAccent">#ffffd600</color>
+    <color name="colorFace">#B5926D</color>
 </resources>
