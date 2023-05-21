@@ -86,15 +86,16 @@ public class MainActivity extends AppCompatActivity {
         }
         //klik kedua
 
-        else {
-
+        else if (this.count == 2) {
             //face
             mPaint.setColor(mColorFace);
             mCanvas.drawCircle(halfWidth, halfHeight-100, halfHeight/3, mPaint);
             int x = halfWidth - mBounds.centerX();
             int y = halfHeight - mBounds.centerY();
 
+        }
 
+        else if (count == 3) {
 
             //left ear
             mPaint.setColor(mColorFace );
@@ -112,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
             mCanvas.drawPath(path, mPaint);
 
-            mPaint.setColor(mColorWhite - MULTIPLIER *mOffset);
+            mPaint.setColor(mColorWhite);
             Point g = new Point(halfWidth-250, halfHeight-300);
             Point h = new Point(halfWidth-110, halfHeight-410);
             Point i = new Point( halfWidth-210, halfHeight-500);
@@ -142,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
             mCanvas.drawPath(path2, mPaint);
 
-            mPaint.setColor(mColorWhite - MULTIPLIER *mOffset);
+            mPaint.setColor(mColorWhite );
             Point j = new Point(halfWidth+250, halfHeight-300);
             Point k = new Point(halfWidth+110, halfHeight-410);
             Point l = new Point( halfWidth+210, halfHeight-500);
@@ -156,6 +157,21 @@ public class MainActivity extends AppCompatActivity {
             path3.close();
 
             mCanvas.drawPath(path3, mPaint);
+        }
+
+        else if (count == 4) {
+            //eye
+            mPaint.setColor(mColorWhite);
+            mCanvas.drawCircle(halfWidth-120, halfHeight-250, halfHeight/16, mPaint);
+            mPaint.setColor(mColorWhite);
+            mCanvas.drawCircle(halfWidth+120, halfHeight-250, halfHeight/16, mPaint);
+            mPaint.setColor(mColorText);
+            mCanvas.drawCircle(halfWidth-120, halfHeight-250, halfHeight/23, mPaint);
+            mPaint.setColor(mColorText);
+            mCanvas.drawCircle(halfWidth+120, halfHeight-250, halfHeight/23, mPaint);
+        }
+
+        else if (count == 5) {
 
             //mouth
             mPaint.setColor(mColorText);
@@ -164,94 +180,14 @@ public class MainActivity extends AppCompatActivity {
             mCanvas.drawCircle(halfWidth, halfHeight+70, halfHeight/12, mPaint);
 
 
+        }
+
+        else if (count == 6) {
             //nose
             mPaint.setColor(mColorText);
             mCanvas.drawCircle(halfWidth, halfHeight-50, halfHeight/13, mPaint);
 
-
-            //eye
-            mPaint.setColor(mColorWhite);
-            mCanvas.drawCircle(halfWidth-120, halfHeight-250, halfHeight/16, mPaint);
-            mPaint.setColor(mColorWhite);
-            mCanvas.drawCircle(halfWidth+120, halfHeight-250, halfHeight/16, mPaint);
-
-            //black
-            mPaint.setColor(mColorText);
-            mCanvas.drawCircle(halfWidth-120, halfHeight-250, halfHeight/23, mPaint);
-            mPaint.setColor(mColorText);
-            mCanvas.drawCircle(halfWidth+120, halfHeight-250, halfHeight/23, mPaint);
-
-
         }
-//        else if (this.count == 2) {
-//            mPaint.setColor(mColorFace);
-//            mCanvas.drawCircle(halfWidth, halfHeight-100, halfHeight/3, mPaint);
-//            int x = halfWidth - mBounds.centerX();
-//            int y = halfHeight - mBounds.centerY();
-//
-//        }
-
-//        else if (count == 3) {
-//            mPaint.setColor(mColorFace - MULTIPLIER *mOffset);
-//            Point a = new Point(halfWidth-410, halfHeight-310);
-//            Point b = new Point(halfWidth-150, halfHeight-398);
-//            Point c = new Point( halfWidth - 330, halfHeight-50);
-//
-//            Path path = new Path();
-//            path.setFillType(Path.FillType.EVEN_ODD);
-//            path.lineTo(a.x, a.y);
-//            path.lineTo(b.x, b.y);
-//            path.lineTo(c.x, c.y);
-//            path.lineTo(a.x, a.y);
-//            path.close();
-//
-//            mCanvas.drawPath(path, mPaint);
-//        }
-
-//        else if (count == 4) {
-//
-//            mPaint.setColor(mColorFace - MULTIPLIER * mOffset);
-//            Point d = new Point(halfWidth + 410, halfHeight - 310);
-//            Point e = new Point(halfWidth + 150, halfHeight - 398);
-//            Point f = new Point(halfWidth +330, halfHeight + 50);
-//
-//            Path path2 = new Path();
-//            path2.lineTo(d.x, d.y);
-//            path2.lineTo(e.x, e.y);
-//            path2.lineTo(f.x, f.y);
-//            path2.lineTo(d.x, d.y);
-//            path2.close();
-//
-//            mCanvas.drawPath(path2, mPaint);
-//        }
-
-//        else if (count == 5) {
-//            //mounth
-//            mPaint.setColor(mColorText);
-//            mCanvas.drawCircle(halfWidth, halfHeight+150, halfHeight/12, mPaint);
-//            mPaint.setColor(mColorFace);
-//            mCanvas.drawCircle(halfWidth, halfHeight+110, halfHeight/12, mPaint);
-//        }
-//
-//        else if (count == 6) {
-//            //nose
-//            mPaint.setColor(mColorText);
-//            mCanvas.drawCircle(halfWidth, halfHeight, halfHeight/13, mPaint);
-//        }
-//
-//        else if (count == 7) {
-//            //eye
-//            mPaint.setColor(mColorWhite);
-//            mCanvas.drawCircle(halfWidth-120, halfHeight-200, halfHeight/16, mPaint);
-//            mPaint.setColor(mColorWhite);
-//            mCanvas.drawCircle(halfWidth+120, halfHeight-200, halfHeight/16, mPaint);
-//
-//            //black
-//            mPaint.setColor(mColorText);
-//            mCanvas.drawCircle(halfWidth-120, halfHeight-200, halfHeight/23, mPaint);
-//            mPaint.setColor(mColorText);
-//            mCanvas.drawCircle(halfWidth+120, halfHeight-200, halfHeight/23, mPaint);
-//        }
 
         view.invalidate();
     }
